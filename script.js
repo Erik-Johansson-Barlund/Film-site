@@ -135,20 +135,20 @@ window.addEventListener('DOMContentLoaded', () => {
    //THE FUNCTION THAT GETS AND SETS ALL THE ELEMENTS FOR THE MAIN
    //CONTENT OF THE PAGE. IT WORKS WITH 2 DIFFERENT API'S AT THE
    //MOMENT, Omdb TO GET MOVIE DATA AND TVMAZE TO GET ACTOR IMAGES
-   function getMovie(e) {
+   function getMovie(search_movie) {
       bg.innerHTML = `<img id="img1" crossOrigin="anonymous" src='${
-         movies[e.id].Poster
+         movies[search_movie.id].Poster
       }' width="100%"></img>`;
 
       img = document.querySelector('img');
       title_image.innerHTML = bg.innerHTML;
-      header.innerText = movies[e.id].Title;
+      header.innerText = movies[search_movie.id].Title;
       changeBackgroundColor();
       search_results.innerHTML = '';
       search_box.value = '';
       let movie = fetch(
          `http://www.omdbapi.com/?i=${
-            movies[e.id].imdbID
+            movies[search_movie.id].imdbID
          }&plot=full&apikey=${key}`
       )
          .then((response) => response.json())
