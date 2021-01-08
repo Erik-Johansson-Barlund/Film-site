@@ -27,11 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
    let stats = main_content.children[4];
    let start_screen = content_wrapper[0].children[1].children[2];
 
-   // THIS SITE WORKS WITH THE Omdb API. GET A KEY FOR FREE BY VISITING
-   // http://www.omdbapi.com AND REQUESTING ONE
-
    //VARIABLES NEEDED BY MULTIPLE FUNCTIONS
-   const key = ''; //YOUR Omdb API KEY GOES HERE
+   const key = '525f83c2'; //YOUR Omdb API KEY GOES HERE
    let movies = []; //WILL GET FILLED WITH RESULTS FROM CURRENT SEARCH
    let div_to_focus = 0; //USED TO NAVIGATE THE SEARCH RESULTS
    let up_or_down = true; //HELPER WHEN NAVIGATING WITH ARROWKEYS
