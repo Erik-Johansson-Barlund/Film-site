@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
       if (search_box.value.length > 2) {
          if (search_box.value[search_box.value.length - 1] != ' ') {
             let movie = fetch(
-               `http://www.omdbapi.com/?s=${search_box.value}&apikey=${key}`
+               `https://www.omdbapi.com/?s=${search_box.value}&apikey=${key}`
             )
                .then((response) => response.json())
                .then((json) => {
@@ -145,7 +145,7 @@ window.addEventListener('DOMContentLoaded', () => {
       search_results.innerHTML = '';
       search_box.value = '';
       let movie = fetch(
-         `http://www.omdbapi.com/?i=${
+         `https://www.omdbapi.com/?i=${
             movies[search_movie.id].imdbID
          }&plot=full&apikey=${key}`
       )
@@ -201,7 +201,7 @@ window.addEventListener('DOMContentLoaded', () => {
             for (let actor of actor_names) {
                let formatted_name = actor.split(' ').join('-').toLowerCase();
                let actor_data = fetch(
-                  `http://api.tvmaze.com/search/people?q=${formatted_name}`
+                  `https://api.tvmaze.com/search/people?q=${formatted_name}`
                )
                   .then((actor_response) => actor_response.json())
                   .then((actor_json) => {
