@@ -297,6 +297,7 @@ p {
    }
    .search-results {
       width: 80vw;
+      font-size: 0.9em;
       background-color: rgba(255, 255, 255, 0.839);
       border: 1px solid grey;
    }
