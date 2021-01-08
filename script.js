@@ -28,7 +28,8 @@ window.addEventListener('DOMContentLoaded', () => {
    let start_screen = content_wrapper[0].children[1].children[2];
 
    //VARIABLES NEEDED BY MULTIPLE FUNCTIONS
-   const key = '525f83c2'; //YOUR Omdb API KEY GOES HERE
+
+   const key = '525f83c2'; //THE Omdb API KEY
    let movies = []; //WILL GET FILLED WITH RESULTS FROM CURRENT SEARCH
    let div_to_focus = 0; //USED TO NAVIGATE THE SEARCH RESULTS
    let up_or_down = true; //HELPER WHEN NAVIGATING WITH ARROWKEYS
@@ -69,7 +70,7 @@ window.addEventListener('DOMContentLoaded', () => {
    });
 
    //THE FUNCTION USED TO SIMULATE A FOCUS EFFECT WHEN USING THE MOUSE TO
-   //MOVE OVER SEARCH RESULTS. I USED THIS AS I COULD'T FIND A WAY TO
+   //MOVE OVER SEARCH RESULTS. I USED THIS AS I COULDN'T FIND A WAY TO
    //GIVE FOCUS TO DIVS WITH THE ARROWKEYS.
    document.addEventListener('mousemove', (e) => {
       for (let div of search_results.children) {
