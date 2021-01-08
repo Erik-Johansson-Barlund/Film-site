@@ -277,7 +277,7 @@ p {
    .content-wrapper {
       margin-top: 20vh;
       width: 95%;
-      height: 200vh; /*Ändra detta när det är färdigtestat*/
+      height: 215vh; /*Ändra detta när det är färdigtestat*/
       box-shadow: 0px 4px 6px 3px rgba(0, 0, 0, 0.4);
       background-color: #283048;
    }
@@ -303,7 +303,7 @@ p {
    .title-image {
       position: relative;
       width: 95vw;
-      max-height: 66vh;
+      max-height: 65vh;
       margin-top: -1vh;
       margin-left: 0vw;
       transform: rotate(0deg);
@@ -335,12 +335,13 @@ p {
    .text {
       position: absolute;
       height: 37vh;
-      top: 39vh;
+      top: 41vh;
       width: 93%;
       padding-left: 1vw;
       padding-right: 1vw;
       margin-top: 50vh;
       background-color: rgba(131, 128, 128, 0);
+      box-shadow: 0px 22px 8px -6px rgba(0, 0, 0, 0.259);
       font-size: 1.2em;
    }
 
@@ -348,7 +349,7 @@ p {
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 165vh;
+      top: 175vh;
       left: 4%;
       width: 300px;
       height: 38vh;
@@ -359,10 +360,11 @@ p {
    .other-data {
       position: absolute;
 
-      top: 138vh;
+      top: 142vh;
       left: 3vw;
       width: 94%;
-      color: rgb(255, 255, 255);
+      color: inherit;
+      box-shadow: 0px 22px 8px -6px rgba(0, 0, 0, 0.259);
    }
    .actors {
       justify-content: space-between;
@@ -379,5 +381,13 @@ p {
    }
    .actor-image img {
       height: 30vw;
+   }
+}
+@media screen and (max-width: 374px) {
+   .stats {
+      top: 181vh;
+   }
+   .content-wrapper {
+      height: 220vh; /*Ändra detta när det är färdigtestat*/
    }
 }
