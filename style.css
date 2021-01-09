@@ -350,6 +350,7 @@ p {
    }
    .text {
       position: absolute;
+      overflow: scroll;
       height: 37vh;
       top: 41vh;
       width: 93%;
