@@ -121,7 +121,7 @@ window.addEventListener('DOMContentLoaded', () => {
    });
 
    search_results.addEventListener('click', (e) => {
-      navigator.vibrate(200);
+      navigator.vibrate(100);
       getMovie(e.target);
    });
 
