@@ -349,6 +349,7 @@ p {
       flex-direction: column;
    }
    .text {
+      /*test*/
       position: absolute;
       overflow: scroll;
       height: 37vh;
