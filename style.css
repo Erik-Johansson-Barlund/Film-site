@@ -219,14 +219,29 @@ a:hover {
    display: none;
    flex-direction: column;
    position: absolute;
-   top: 555px;
+   bottom: 1vh;
    left: 16%;
-   width: 300px;
-   height: 38vh;
+   padding-left: 5px;
+   border-radius: 8px;
+   width: 250px;
+
+   background: rgba(131, 131, 133, 0.786);
+   background: -webkit-linear-gradient(
+      80deg,
+      rgba(138, 139, 140, 0.796),
+      rgba(117, 126, 143, 0.741)
+   );
+   background: linear-gradient(
+      80deg,
+      rgba(140, 140, 141, 0.767),
+      rgba(89, 93, 100, 0.775)
+   );
+   box-shadow: 0px 4px 6px 3px rgba(0, 0, 0, 0.4);
 }
 .stats div:nth-child(odd) {
    font-family: 'Staatliches', cursive;
-   filter: drop-shadow(1px 1px 2px rgba(213, 177, 57, 0.2));
+
+   filter: drop-shadow(1px 1px 2px rgba(114, 114, 113, 0.432));
 }
 .start-screen {
    position: absolute;
